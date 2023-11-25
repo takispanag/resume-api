@@ -115,6 +115,8 @@ public class ResumeService {
                 .employmentType(role.getEmploymentType())
                 .startDate(role.getStartDate())
                 .endDate(role.getEndDate())
+                .achievements(role.getAchievements())
+                .technologyStack(role.getTechnologyStack())
                 .build();
     }
 }

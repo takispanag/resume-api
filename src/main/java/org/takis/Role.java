@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Getter
@@ -27,6 +28,10 @@ public class Role {
     private WorkingModel workingModel;
 
     private String employmentType;
+
+    private List<String> achievements;
+
+    private List<String> technologyStack;
 
     private LocalDate startDate;
 
