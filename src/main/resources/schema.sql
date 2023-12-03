@@ -1,3 +1,6 @@
+-- Future me, the issue we have is due to the PRIMARY KEYS/FOREIGN KEYS OF RESUME TABLE AND OTHER TABLES (CONTACT_DETAILS ETC)
+-- I tried for like 10 mins but I cant figure out why this fails, as we first create a resume and then contact details
+
 -- Create table for Resume
 CREATE TABLE IF NOT EXISTS resume (
     id BIGINT PRIMARY KEY AUTO_INCREMENT
