@@ -3,7 +3,8 @@ package org.takis;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
+import java.util.List;
+
 @Getter
 @Setter
 @Builder
@@ -11,17 +12,9 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 public class Project {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String projectName;
-
+    private String name;
     private String description;
-
-    @ManyToOne
-    @JoinColumn(name = "resumeId")
-    private Resume resume;
+    private List<String> technologyStack;
+    private String link;
 }
 

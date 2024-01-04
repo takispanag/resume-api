@@ -1,0 +1,125 @@
+{
+  "name": "Panagiotis (Takis) Panagiotopoulos",
+  "roles": [
+    {
+      "title": "Java Software Engineer - Backend",
+      "level": "Full-time",
+      "company": "Tyntec",
+      "business": "Cloud Telecommunications",
+      "location": "Dortmund, Germany (Remote)",
+      "startDate": "Sept 2023",
+      "endDate": "Present",
+      "responsibilities": [
+        "Test coverage from 27% to XXXXX%",
+        "Lead the refactoring of an existing service...",
+        "Branching strategy, team manifesto...",
+        "Dependency track, javadoc support, sonarqube...",
+        "Migrated our pipelines from Jenkins to Gitlab CI...",
+        "Sole developer that migrated 3 internal and 1 external service..."
+      ],
+      "technologyStack": [
+        "Java 17",
+        "Spring Boot",
+        "Spring Reactive",
+        "PostgreSQL",
+        "Cassandra",
+        "Docker",
+        "Kubernetes",
+        "Gradle",
+        "JUnit",
+        "Mockito",
+        "Jenkins",
+        "SonarQube",
+        "Dependency Track"
+      ]
+    },
+    {
+      "title": "Java Software Engineer - Backend",
+      "level": "Full-time",
+      "company": "Light & Wonder",
+      "business": "iGaming",
+      "location": "Athens, Greece (Remote)",
+      "startDate": "Aug 2022",
+      "endDate": "Sept 2023",
+      "responsibilities": [
+        "Part of a dev team that implemented two new internal services...",
+        "Created an automated changelog extraction mechanism...",
+        "Implemented an internal scraping tool (using Playwright)...",
+        "Participated in technical analysis and redesign of an existing monolithic framework...",
+        "Created multiple codelab tutorials to help external developers..."
+      ],
+      "technologyStack": [
+        "Java 11",
+        "Spring",
+        "Spring Boot",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker",
+        "Maven",
+        "JUnit",
+        "Mockito",
+        "Jenkins",
+        "SonarQube"
+      ]
+    },
+    {
+      "title": "Consulting Intern - Backend",
+      "level": "Full-time",
+      "company": "Deloitte",
+      "business": "Client Based",
+      "location": "Athens, Greece (Remote)",
+      "startDate": "Feb 2022",
+      "endDate": "Aug 2022",
+      "responsibilities": [
+        "Automated a product upload pipeline...",
+        "Design, implementation and deployment of Rest APIs...",
+        "Participated in workshops with clients..."
+      ],
+      "technologyStack": [
+        "Java 8",
+        "Java EE",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "contactDetails": {
+    "email": "takispanayiot@gmail.com",
+    "phoneNumber": "(+30) 6979579800",
+    "linkedIn": "panayiotis-panagiotopoulos",
+    "github": "github.com/takispanag"
+  },
+  "education": [
+    {
+      "institution": "University of Peloponnese",
+      "location": "Patras, Greece",
+      "degree": "B.Sc. in Software Engineering",
+      "fieldOfStudy": "Electrical and Computer Engineering",
+      "grade": "8.32",
+      "registrationDate": "September 2017",
+      "graduationDate": "November 2022"
+    }
+  ],
+  "skills": {
+    "programmingLanguages": ["Java", "Python", "Bash", "SQL"],
+    "frameworks": ["Spring", "Spring Reactive", "Spring Boot", "JUnit", "Mockito", "Wiremock", "Playwright", "Selenium"],
+    "databases": ["PostgreSQL", "MongoDB", "Cassandra"],
+    "tools": ["GIT", "Gradle", "Maven", "Jenkins", "Nexus", "Docker", "Kubernetes", "SonarQube"],
+    "platforms": ["Linux", "Windows", "AWS"]
+  },
+  "projects": [
+    {
+      "name": "Twitter Sentiment Analysis for Stock Prediction (Thesis)",
+      "description": "By analyzing Twitter sentiment on a given day, I implemented a tool which helped predict the market close price using Deep Neural Networks and traditional ML methods.",
+      "technologyStack": ["PyTorch", "SKLearn", "NLTK", "Pandas"],
+      "link": "Github Link"
+    }
+  ],
+  "spokenLanguages": [
+    { "language": "Greek", "proficiency": "NATIVE" },
+    { "language": "English", "proficiency": "B2" },
+    { "language": "German", "proficiency": "A2" }
+  ],
+  "certifications": [
+    { "name": "Master Microservices with Spring Boot, Spring Cloud, Docker and Kubernetes", "provider": "Udemy", "link": "Udemy Link", "date": "09/06/2022" }
+  ]
+}

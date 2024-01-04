@@ -5,33 +5,19 @@ import lombok.*;
 
 import java.util.List;
 
-@Entity
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Resume {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @OneToOne(mappedBy = "resume", cascade = CascadeType.ALL)
-    private ContactDetails contactDetails;
-
-    @OneToOne(mappedBy = "resume", cascade = CascadeType.ALL)
-    private Education education;
-
-    @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
+    private String name;
     private List<Role> roles;
-
-    @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
+    private ContactDetails contactDetails;
+    private List<Education> education;
+    private Skills skills;
     private List<Project> projects;
-
-    @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
     private List<SpokenLanguage> spokenLanguages;
-
-    @OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
     private List<Certification> certifications;
 }

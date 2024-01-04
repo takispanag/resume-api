@@ -2,50 +2,66 @@ package org.takis;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/resume")
 @RequiredArgsConstructor
-@RequestMapping("/api/resume")
 public class ResumeController {
     private final ResumeService resumeService;
 
     @GetMapping
-    public ResumeDto getResume() {
+    public Resume getResume() {
         return resumeService.getResume();
     }
 
+    @GetMapping("/roles")
+    public List<Role> getRoles() {
+        return resumeService.getRoles();
+    }
+
+//    @GetMapping("/roles/{id}")
+//    public Role getRoleById(@PathVariable String id) {
+//        return resumeService.getRoleById(id);
+//    }
+
     @GetMapping("/contactDetails")
-    public ContactDetailsDto getContactDetails() {
+    public ContactDetails getContactDetails() {
         return resumeService.getContactDetails();
     }
 
     @GetMapping("/education")
-    public EducationDto getEducation() {
+    public List<Education> getEducation() {
         return resumeService.getEducation();
     }
 
-    @GetMapping("/roles")
-    public List<RoleDto> getRoles() {
-        return resumeService.getRoles();
-    }
-
     @GetMapping("/projects")
-    public List<ProjectDto> getProjects() {
+    public List<Project> getProjects() {
         return resumeService.getProjects();
     }
 
     @GetMapping("/spokenLanguages")
-    public List<SpokenLanguageDto> getSpokenLanguages() {
+    public List<SpokenLanguage> getSpokenLanguages() {
         return resumeService.getSpokenLanguages();
     }
 
     @GetMapping("/certifications")
-    public List<CertificationDto> getCertifications() {
+    public List<Certification> getCertifications() {
         return resumeService.getCertifications();
+    }
+
+//    @GetMapping("/certifications/{id}")
+//    public Certification getCertificationById(@PathVariable String id) {
+//        return resumeService.getCertificationById(id);
+//    }
+
+    @GetMapping("/skills")
+    public Skills getSkills() {
+        return resumeService.getSkills();
     }
 }
 
